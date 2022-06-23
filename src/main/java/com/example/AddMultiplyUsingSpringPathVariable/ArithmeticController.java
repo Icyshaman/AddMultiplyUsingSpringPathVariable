@@ -1,11 +1,11 @@
-package com.example.NameUsingSpring;
+package com.example.AddMultiplyUsingSpringPathVariable;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Demo {
+public class ArithmeticController {
 
 	@GetMapping(path = "/Add/{num1}/{num2}")
 	public int add(@PathVariable int num1, @PathVariable int num2) {
